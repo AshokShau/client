@@ -19,14 +19,14 @@ class TdJson:
         """TdJson client
 
         Parameters:
-            lib_path (``str``, optional):
-                Path to shared library; if ``None`` then [`tdjson`](https://github.com/AYMENJD/tdjson) binding will be used. Default is ``None``
+            lib_path (`str`, optional):
+                Path to shared library; if `None` then [`tdjson`](https://github.com/AYMENJD/tdjson) binding will be used. Default is `None`
 
-            verbosity (``int``, optional):
-                TDLib verbosity level. Default is ``2``
+            verbosity (`int`, optional):
+                TDLib verbosity level. Default is `2`
 
         Raises:
-            :py:class:``ValueError``: If library not found
+            :py:class:`ValueError`: If library not found
         """
 
         self._build_client(lib_path, verbosity)
@@ -41,10 +41,10 @@ class TdJson:
         """Build TdJson client
 
         Parameters:
-            lib_path (``str``):
+            lib_path (`str`):
                 Path to shared library
 
-            verbosity (``int``):
+            verbosity (`int`):
                 TDLib verbosity level
         """
 
@@ -115,11 +115,11 @@ class TdJson:
         """Receives incoming updates and results from TDLib
 
         Parameters:
-            timeout (``float``, *optional*):
-                The maximum number of seconds allowed to wait for new data. Default is ``2.0``
+            timeout (`float`, *optional*):
+                The maximum number of seconds allowed to wait for new data. Default is `2.0`
 
         Returns:
-            :py:class:``dict``: An incoming update or result to a request. If no data is received, ``None`` is returned
+            :py:class:`dict`: An incoming update or result to a request. If no data is received, `None` is returned
         """
 
         if res := self._td_receive(
@@ -131,7 +131,7 @@ class TdJson:
         """Sends a request to TDLib
 
         Parameters:
-            data (``dict``):
+            data (`dict`):
                 The request to be sent
         """
 
@@ -141,10 +141,10 @@ class TdJson:
         """Executes a TDLib request
 
         Parameters:
-            data (``dict``): The request to be executed
+            data (`dict`): The request to be executed
 
         Returns:
-            :py:class:``dict``: The result of the request
+            :py:class:`dict`: The result of the request
         """
 
         if res := self._td_execute(json_dumps(data, encode=not self.using_binding)):

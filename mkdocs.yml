@@ -1,0 +1,41 @@
+site_name: PyTDBot Documentation
+site_url: https://pytdbot.github.io/client/
+repo_url: https://github.com/pytdbot/client
+repo_name: pytdbot/client
+copyright: "© 2025 PyTDBot. All rights reserved."
+
+theme:
+  name: readthedocs
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: sphinx
+            show_source: false
+            show_signature: true
+            members_order: source
+            docstring_section_style: list
+            separate_signature: true
+
+nav:
+  - Home: index.md
+  - API Reference:
+      - Client: api/client.md
+      - Exception: api/exception.md
+      - Handlers:
+          - Overview: api/handlers.md
+          - Decorators: api/handlers_decorators.md
+          - Handler: api/handlers_handler.md
+          - Updates: api/handlers_td_updates.md
+      - Methods:
+          - Overview: api/methods.md
+          - Methods: api/methods_methods.md
+          - Functions: api/methods_td_functions.md
+      - Types:
+          - TD Types: api/types_td_types.md
+          - Callback Query: api/types_callback_query.md
+          - Message: api/types_message.md
+      - TDJson: api/tdjson.md

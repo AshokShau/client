@@ -24,11 +24,11 @@ class Decorators(Updates):
             filters (:class:`~pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in initializers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in initializers list. Default is `None` (append)
 
-            inner_object (``bool``, *optional*):
-                Wether to pass an inner object of update or not; for example ``UpdateNewMessage.message``. Default is ``False``
+            inner_object (`bool`, *optional*):
+                Wether to pass an inner object of update or not; for example `UpdateNewMessage.message`. Default is `False`
 
         Raises:
             :py:class:`TypeError`
@@ -69,11 +69,11 @@ class Decorators(Updates):
             filters (:class:`~pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in finalizers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in finalizers list. Default is `None` (append)
 
-            inner_object (``bool``, *optional*):
-                Wether to pass an inner object of update or not; for example ``UpdateNewMessage.message``. Default is ``False``
+            inner_object (`bool`, *optional*):
+                Wether to pass an inner object of update or not; for example `UpdateNewMessage.message`. Default is `False`
 
         Raises:
             :py:class:`TypeError`
@@ -102,14 +102,14 @@ class Decorators(Updates):
         filters: "pytdbot.filters.Filter" = None,
         position: int = None,
     ) -> None:
-        r"""A decorator to handle ``updateNewMessage`` but with ``Message`` object.
+        r"""A decorator to handle `updateNewMessage` but with `Message` object.
 
         Parameters:
             filters (:class:`~pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`

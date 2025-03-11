@@ -44,72 +44,72 @@ class Client(Decorators, Methods):
     r"""Pytdbot, a TDLib client
 
     Parameters:
-        token (``str``, *optional*):
+        token (`str`, *optional*):
             Bot token
 
-        api_id (``int``, *optional*):
+        api_id (`int`, *optional*):
             Identifier for Telegram API access, which can be obtained at https://my.telegram.org
 
-        api_hash (``str``, *optional*):
+        api_hash (`str`, *optional*):
             Identifier hash for Telegram API access, which can be obtained at https://my.telegram.org
 
-        rabbitmq_url (``str``, *optional*):
+        rabbitmq_url (`str`, *optional*):
             URL for RabbitMQ server connection
 
-        instance_id (``str``, *optional*):
-            Instance ID for RabbitMQ connections and queues. Default is ``None`` (random)
+        instance_id (`str`, *optional*):
+            Instance ID for RabbitMQ connections and queues. Default is `None` (random)
 
-        lib_path (``str``, *optional*):
-            Path to TDLib library. Default is ``None`` (auto-detect)
+        lib_path (`str`, *optional*):
+            Path to TDLib library. Default is `None` (auto-detect)
 
         plugins (:class:`~pytdbot.types.Plugins`, *optional*):
             Plugins to load
 
-        default_parse_mode (``str``, *optional*):
-            The default ``parse_mode`` for methods: :meth:`~pytdbot.Client.sendTextMessage`, :meth:`~pytdbot.Client.sendPhoto`, :meth:`~pytdbot.Client.sendAudio`, :meth:`~pytdbot.Client.sendVideo`, :meth:`~pytdbot.Client.sendDocument`, :meth:`~pytdbot.Client.sendAnimation`, :meth:`~pytdbot.Client.sendVoice`, :meth:`~pytdbot.Client.sendCopy`, :meth:`~pytdbot.Client.editTextMessage`; Default is ``None`` (Don\'t parse)
-            Supported values: ``markdown``, ``markdownv2``, ``html``
+        default_parse_mode (`str`, *optional*):
+            The default `parse_mode` for methods: :meth:`~pytdbot.Client.sendTextMessage`, :meth:`~pytdbot.Client.sendPhoto`, :meth:`~pytdbot.Client.sendAudio`, :meth:`~pytdbot.Client.sendVideo`, :meth:`~pytdbot.Client.sendDocument`, :meth:`~pytdbot.Client.sendAnimation`, :meth:`~pytdbot.Client.sendVoice`, :meth:`~pytdbot.Client.sendCopy`, :meth:`~pytdbot.Client.editTextMessage`; Default is `None` (Don\'t parse)
+            Supported values: `markdown`, `markdownv2`, `html`
 
-        system_language_code (``str``, *optional*):
-            System language code. Default is ``en``
+        system_language_code (`str`, *optional*):
+            System language code. Default is `en`
 
-        device_model (``str``, *optional*):
-            Device model. Default is ``None`` (auto-detect)
+        device_model (`str`, *optional*):
+            Device model. Default is `None` (auto-detect)
 
-        files_directory (``str``, *optional*):
+        files_directory (`str`, *optional*):
             Directory for storing files and database
 
-        database_encryption_key (``str`` | ``bytes``):
+        database_encryption_key (`str` | `bytes`):
             Encryption key for database encryption
 
-        use_test_dc (``bool``, *optional*):
-            If set to true, the Telegram test environment will be used instead of the production environment. Default is ``False``
+        use_test_dc (`bool`, *optional*):
+            If set to true, the Telegram test environment will be used instead of the production environment. Default is `False`
 
-        use_file_database (``bool``, *optional*):
-            If set to true, information about downloaded and uploaded files will be saved between application restarts. Default is ``True``
+        use_file_database (`bool`, *optional*):
+            If set to true, information about downloaded and uploaded files will be saved between application restarts. Default is `True`
 
-        use_chat_info_database (``bool``, *optional*):
-            If set to true, the library will maintain a cache of users, basic groups, supergroups, channels and secret chats. Implies ``use_file_database``. Default is ``True``
+        use_chat_info_database (`bool`, *optional*):
+            If set to true, the library will maintain a cache of users, basic groups, supergroups, channels and secret chats. Implies `use_file_database`. Default is `True`
 
-        use_message_database (``bool``, *optional*):
-            If set to true, the library will maintain a cache of chats and messages. Implies use_chat_info_database. Default is ``True``
+        use_message_database (`bool`, *optional*):
+            If set to true, the library will maintain a cache of chats and messages. Implies use_chat_info_database. Default is `True`
 
         loop (:py:class:`asyncio.AbstractEventLoop`, *optional*):
-            Event loop. Default is ``None`` (auto-detect)
+            Event loop. Default is `None` (auto-detect)
 
-        options (``dict``, *optional*):
+        options (`dict`, *optional*):
             Pass key-value dictionary to set TDLib options. Check the list of available options at https://core.telegram.org/tdlib/options
 
-        workers (``int``, *optional*):
-            Number of workers to handle updates. Default is ``5``. If set to ``None``, updates will be immediately handled instead of being queued, which can impact performance.
+        workers (`int`, *optional*):
+            Number of workers to handle updates. Default is `5`. If set to `None`, updates will be immediately handled instead of being queued, which can impact performance.
 
-        no_updates (``bool``, *optional*):
-            Whether the client should handle updates or not. Applicable only when using [TDLib Server](https://github.com/pytdbot/tdlib-server). Default is ``False``
+        no_updates (`bool`, *optional*):
+            Whether the client should handle updates or not. Applicable only when using [TDLib Server](https://github.com/pytdbot/tdlib-server). Default is `False`
 
-        td_verbosity (``int``, *optional*):
-            Verbosity level of TDLib. Default is ``2``
+        td_verbosity (`int`, *optional*):
+            Verbosity level of TDLib. Default is `2`
 
         td_log (:class:`~pytdbot.types.LogStream`, *optional*):
-            Log stream. Default is ``None`` (Log to ``stdout``)
+            Log stream. Default is `None` (Log to `stdout`)
     """
 
     def __init__(
@@ -229,8 +229,8 @@ class Client(Decorators, Methods):
         r"""Start pytdbot client
 
         Parameters:
-            login (``bool``, *optional*):
-                Login after start. Default is ``True``
+            login (`bool`, *optional*):
+                Login after start. Default is `True`
         """
 
         if not self.is_running:
@@ -300,20 +300,20 @@ class Client(Decorators, Methods):
         r"""Add an update handler
 
         Parameters:
-            update_type (``str``):
+            update_type (`str`):
                 An update type
 
-            func (``Callable``):
+            func (`Callable`):
                 A callable function
 
             filters (:class:`~pytdbot.filters.Filter`, *optional*):
                 message filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
-            inner_object (``bool``, *optional*):
-                Wether to pass an inner object of update or not; for example ``UpdateNewMessage.message``. Default is ``False``
+            inner_object (`bool`, *optional*):
+                Wether to pass an inner object of update or not; for example `UpdateNewMessage.message`. Default is `False`
 
         Raises:
             TypeError
@@ -339,7 +339,7 @@ class Client(Decorators, Methods):
         r"""Remove an update handler
 
         Parameters:
-            func (``Callable``):
+            func (`Callable`):
                 A callable function
 
         Raises:
@@ -378,7 +378,7 @@ class Client(Decorators, Methods):
                         print(res)
 
         Parameters:
-            request (``dict``):
+            request (`dict`):
                 The request to be sent
 
         Returns:
@@ -442,7 +442,7 @@ class Client(Decorators, Methods):
         return result
 
     async def call_method(self, method: str, **kwargs) -> types.TlObject:
-        r"""Call a method. with keyword arguments (``kwargs``) support
+        r"""Call a method. with keyword arguments (`kwargs`) support
 
         Example:
             .. code-block:: python
@@ -455,7 +455,7 @@ class Client(Decorators, Methods):
                         print(res)
 
         Parameters:
-            method (``str``):
+            method (`str`):
                 TDLib method name
 
         Returns:
@@ -483,8 +483,8 @@ class Client(Decorators, Methods):
                 client.run()
 
         Parameters:
-            login (``bool``, *optional*):
-                Login after start. Default is ``True``
+            login (`bool`, *optional*):
+                Login after start. Default is `True`
         """
 
         self._register_signal_handlers()
@@ -506,7 +506,7 @@ class Client(Decorators, Methods):
                 If the instance is already stopped
 
         Returns:
-            :py:class:`bool`: ``True`` on success
+            :py:class:`bool`: `True` on success
         """
 
         if (

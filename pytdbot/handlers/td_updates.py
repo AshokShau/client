@@ -22,8 +22,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -62,8 +62,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -96,8 +96,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -136,8 +136,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -176,8 +176,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -212,8 +212,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -246,8 +246,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -280,8 +280,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -316,8 +316,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -356,8 +356,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -396,8 +396,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -436,8 +436,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -476,8 +476,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -512,8 +512,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -552,8 +552,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -586,8 +586,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -620,8 +620,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -654,8 +654,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -688,8 +688,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -724,8 +724,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -760,8 +760,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -796,8 +796,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -830,8 +830,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -866,8 +866,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -906,8 +906,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -940,8 +940,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -974,8 +974,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1008,8 +1008,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1048,8 +1048,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1088,8 +1088,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1124,8 +1124,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1160,8 +1160,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1196,8 +1196,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1236,8 +1236,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1276,8 +1276,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1316,8 +1316,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1352,8 +1352,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1386,8 +1386,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1420,8 +1420,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1460,8 +1460,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1500,8 +1500,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1534,8 +1534,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1574,8 +1574,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1614,8 +1614,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1654,8 +1654,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1694,8 +1694,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1730,8 +1730,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1764,8 +1764,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1804,8 +1804,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1838,8 +1838,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1878,8 +1878,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1918,8 +1918,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1958,8 +1958,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -1998,8 +1998,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2038,8 +2038,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2078,8 +2078,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2118,8 +2118,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2152,8 +2152,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2192,8 +2192,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2232,8 +2232,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2266,8 +2266,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2302,8 +2302,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2342,8 +2342,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2382,8 +2382,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2416,8 +2416,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2450,8 +2450,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2484,8 +2484,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2518,8 +2518,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2552,8 +2552,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2586,8 +2586,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2620,8 +2620,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2654,8 +2654,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2694,8 +2694,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2734,8 +2734,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2774,8 +2774,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2808,8 +2808,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2848,8 +2848,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2888,8 +2888,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2922,8 +2922,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2962,8 +2962,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -2996,8 +2996,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3036,8 +3036,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3076,8 +3076,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3125,8 +3125,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3159,8 +3159,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3193,8 +3193,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3233,8 +3233,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3273,8 +3273,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3313,8 +3313,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3353,8 +3353,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3389,8 +3389,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3423,8 +3423,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3457,8 +3457,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3497,8 +3497,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3533,8 +3533,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3569,8 +3569,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3609,8 +3609,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3645,8 +3645,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3679,8 +3679,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3713,8 +3713,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3753,8 +3753,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3793,8 +3793,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3827,8 +3827,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3863,8 +3863,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3899,8 +3899,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3939,8 +3939,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -3975,8 +3975,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4009,8 +4009,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4043,8 +4043,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4083,8 +4083,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4123,8 +4123,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4159,8 +4159,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4193,8 +4193,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4233,8 +4233,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4273,8 +4273,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4309,8 +4309,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4349,8 +4349,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4389,8 +4389,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4429,8 +4429,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4469,8 +4469,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4505,8 +4505,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4545,8 +4545,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4579,8 +4579,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4615,8 +4615,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4651,8 +4651,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4691,8 +4691,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4725,8 +4725,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4765,8 +4765,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4805,8 +4805,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4841,8 +4841,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4881,8 +4881,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4921,8 +4921,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4957,8 +4957,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -4997,8 +4997,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5037,8 +5037,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5077,8 +5077,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5117,8 +5117,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5151,8 +5151,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5191,8 +5191,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5227,8 +5227,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5267,8 +5267,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5307,8 +5307,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5343,8 +5343,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5383,8 +5383,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5417,8 +5417,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5451,8 +5451,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5485,8 +5485,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5519,8 +5519,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5553,8 +5553,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5593,8 +5593,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5627,8 +5627,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5663,8 +5663,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5699,8 +5699,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`
@@ -5739,8 +5739,8 @@ class Updates:
             filters (:class:`pytdbot.filters.Filter`, *optional*):
                 An update filter
 
-            position (``int``, *optional*):
-                The function position in handlers list. Default is ``None`` (append)
+            position (`int`, *optional*):
+                The function position in handlers list. Default is `None` (append)
 
         Raises:
             :py:class:`TypeError`

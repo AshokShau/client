@@ -134,8 +134,8 @@ class MessageBoundMethods:
         r"""Get the text_mention of the message sender
 
         Parameters:
-            parse_mode (``str``, *optional*):
-                The parse mode of the mention. Default is ``html``
+            parse_mode (`str`, *optional*):
+                The parse mode of the mention. Default is `html`
         """
 
         chat = await self._client.getChat(self.from_id)
@@ -211,7 +211,7 @@ class MessageBoundMethods:
 
         Parameters:
 
-            banned_until_date (``int``):
+            banned_until_date (`int`):
                 Point in time (Unix timestamp) when the user will be unbanned; 0 if never. If the user is banned for more than 366 days or for less than 30 seconds from the current time, the user is considered to be banned forever. Always 0 in basic groups
         """
 
@@ -228,7 +228,7 @@ class MessageBoundMethods:
         r"""Delete the received message
 
         Parameters:
-            revoke (``bool``, *optional*):
+            revoke (`bool`, *optional*):
                 Pass true to delete messages for all chat members. Always true for supergroups, channels and secret chats
         """
 
@@ -242,11 +242,11 @@ class MessageBoundMethods:
         r"""React to the current message
 
         Parameters:
-            emoji (``str``, *optional*):
-                Text representation of the reaction; pass ``None`` to remove the current reaction. Default is ``👍``
+            emoji (`str`, *optional*):
+                Text representation of the reaction; pass `None` to remove the current reaction. Default is `👍`
 
-            is_big (``bool``, *optional*):
-                Pass true if the reactions are added with a big animation. Default is ``False``
+            is_big (`bool`, *optional*):
+                Pass true if the reactions are added with a big animation. Default is `False`
         """
 
         return await self._client.setMessageReactions(
@@ -266,10 +266,10 @@ class MessageBoundMethods:
         r"""Pin the message
 
         Parameters:
-            disable_notification (``bool``, *optional*):
+            disable_notification (`bool`, *optional*):
                 If True, disable notification for the message
 
-            only_for_self (``bool``, *optional*):
+            only_for_self (`bool`, *optional*):
                 True, if the message needs to be pinned for one side only; private chats only
         """
 
@@ -294,7 +294,7 @@ class MessageBoundMethods:
         limit: int = 0,
         synchronous: bool = True,
     ) -> Union["pytdbot.types.Error", "pytdbot.types.LocalFile"]:
-        r"""Download the media file and returns ``LocalFile`` object. Shortcut for :meth:`~pytdbot.Client.downloadFile`."""
+        r"""Download the media file and returns `LocalFile` object. Shortcut for :meth:`~pytdbot.Client.downloadFile`."""
 
         res = None
         if isinstance(self.content, pytdbot.types.MessagePhoto):
@@ -353,7 +353,7 @@ class MessageBoundMethods:
         ],
         message_thread_id: int = None,
     ) -> ChatActions:
-        r"""Sends a chat action to a specific chat. Supporting context manager (``with`` statement)
+        r"""Sends a chat action to a specific chat. Supporting context manager (`with` statement)
 
         \Example:
 
@@ -376,11 +376,11 @@ class MessageBoundMethods:
                 await update.reply_text("Hello?")
 
         \Parameters:
-            action (``str``):
-                Type of action to broadcast. Choose one, depending on what the user is about to receive: ``typing`` for text messages, ``upload_photo`` for photos, ``record_video`` or ``upload_video`` for videos, ``record_voice`` or ``upload_voice`` for voice notes, ``upload_document`` for general files, ``choose_sticker`` for stickers, ``find_location` for location data, ``record_video_note`` or ``upload_video_note`` for video notes
+            action (`str`):
+                Type of action to broadcast. Choose one, depending on what the user is about to receive: `typing` for text messages, `upload_photo` for photos, `record_video` or `upload_video` for videos, `record_voice` or `upload_voice` for voice notes, `upload_document` for general files, `choose_sticker` for stickers, ``find_location` for location data, `record_video_note` or `upload_video_note` for video notes
 
-            message_thread_id (``int``, *optional*):
-                If not 0, a message thread identifier in which the action was performed. Default is ``None``
+            message_thread_id (`int`, *optional*):
+                If not 0, a message thread identifier in which the action was performed. Default is `None`
         """
 
         return ChatActions(

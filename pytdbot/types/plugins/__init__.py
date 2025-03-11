@@ -7,18 +7,18 @@ class Plugins:
     def __init__(self, folder: str, include: list = None, exclude: list = None) -> None:
         """
         Parameters:
-            folder (``str``):
+            folder (`str`):
                 The folder to load plugins from
 
-            include (``list``, *optional*):
+            include (`list`, *optional*):
                 Only load plugins with names in this list
 
-            exclude (``list``, *optional*):
+            exclude (`list`, *optional*):
                 Exclude plugins with names in this list
 
         Example:
             To load only the plugins with path "plugins/rules.py" and "plugins/subfolder1/commands.py",
-            you should create the ``Plugins`` object like this:
+            you should create the `Plugins` object like this:
 
             >>> plugins = Plugins(
                     folder="plugins/",

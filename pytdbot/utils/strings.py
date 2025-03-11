@@ -39,7 +39,7 @@ def get_retry_after_time(error_message: str) -> int:
     r"""Get the retry after time from flood wait error message
 
     Parameters:
-        error_message (``str``):
+        error_message (`str`):
             The returned error message from TDLib
 
     Returns:

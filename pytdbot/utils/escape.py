@@ -5,11 +5,11 @@ def escape_html(text: str, quote: bool = True) -> str:
     r"""Escape HTML characters in the given text
 
     Parameters:
-        text (``str``):
+        text (`str`):
             The text to escape
 
-        quote (``bool``, *optional*):
-            Whether to escape double quotes. Default is ``True``
+        quote (`bool`, *optional*):
+            Whether to escape double quotes. Default is `True`
 
     Returns:
         :py:class:`str`: The escaped text
@@ -26,11 +26,11 @@ def escape_markdown(text: str, version: int = 2) -> str:
     r"""Escape Markdown characters in the given text
 
     Parameters:
-        text (``str``):
+        text (`str`):
             The text to escape
 
-        version (``int``, *optional*):
-            The Markdown version to escape. Default is ``2``
+        version (`int`, *optional*):
+            The Markdown version to escape. Default is `2`
 
     Returns:
         :py:class:`str`: The escaped text

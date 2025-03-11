@@ -13,7 +13,7 @@ def create_webapp_secret_key(bot_token: str) -> bytes:
     r"""Create a secret key for Web App data validation
 
     \Parameters:
-        bot_token (``str``):
+        bot_token (`str`):
             Bot token
 
     """
@@ -31,17 +31,17 @@ def parse_webapp_data(
     r"""Parse and validate init data received from Web App
 
     \Parameters:
-        secret_key (``bytes``):
+        secret_key (`bytes`):
             Secret key for Web App data validation; can be created using :func:`pytdbot.utils.create_webapp_secret_key`
 
-        init_data (``str``):
+        init_data (`str`):
             Init data received from Web App
 
-        max_data_age (``int``, *optional*):
-            Maximum age of init data in seconds. Default is ``60`` seconds
+        max_data_age (`int`, *optional*):
+            Maximum age of init data in seconds. Default is `60` seconds
 
     Returns:
-        ``dict``: Parsed data
+        `dict`: Parsed data
 
     Raises:
         :class:`pytdbot.exception.WebAppDataInvalid`
