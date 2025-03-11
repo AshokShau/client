@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://pytdbot.github.io/client/api/client/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Client - PyTDBot Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Client";
+        var mkdocs_page_input_path = "api/client.md";
+        var mkdocs_page_url = "/client/api/client/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> PyTDBot Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Client</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exception/">Exception</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Handlers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers_decorators/">Decorators</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers_handler/">Handler</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers_td_updates/">Updates</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Methods</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../methods/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../methods_methods/">Methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../methods_td_functions/">Functions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Types</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../types_td_types/">TD Types</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../types_callback_query/">Callback Query</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../types_message/">Message</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tdjson/">TDJson</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">PyTDBot Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">API Reference</li>
+      <li class="breadcrumb-item active">Client</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/pytdbot/client/edit/master/docs/api/client.md">Edit on pytdbot/client</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div class="doc doc-object doc-module">
+
+
+
+<a id="pytdbot.client"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pytdbot.client.Client" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">Client</span>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="Decorators (pytdbot.handlers.Decorators)" href="../handlers/#pytdbot.handlers.Decorators">Decorators</a></code>, <code><a class="autorefs autorefs-internal" title="Methods (pytdbot.methods.Methods)" href="../methods/#pytdbot.methods.Methods">Methods</a></code></p>
+
+
+        <p>Pytdbot, a TDLib client</p>
+<p>Parameters:
+    token (<code>str</code>, <em>optional</em>):
+        Bot token</p>
+<pre><code>api_id (`int`, *optional*):
+    Identifier for Telegram API access, which can be obtained at https://my.telegram.org
+
+api_hash (`str`, *optional*):
+    Identifier hash for Telegram API access, which can be obtained at https://my.telegram.org
+
+rabbitmq_url (`str`, *optional*):
+    URL for RabbitMQ server connection
+
+instance_id (`str`, *optional*):
+    Instance ID for RabbitMQ connections and queues. Default is `None` (random)
+
+lib_path (`str`, *optional*):
+    Path to TDLib library. Default is `None` (auto-detect)
+
+plugins (:class:`~pytdbot.types.Plugins`, *optional*):
+    Plugins to load
+
+default_parse_mode (`str`, *optional*):
+    The default `parse_mode` for methods: :meth:`~pytdbot.Client.sendTextMessage`, :meth:`~pytdbot.Client.sendPhoto`, :meth:`~pytdbot.Client.sendAudio`, :meth:`~pytdbot.Client.sendVideo`, :meth:`~pytdbot.Client.sendDocument`, :meth:`~pytdbot.Client.sendAnimation`, :meth:`~pytdbot.Client.sendVoice`, :meth:`~pytdbot.Client.sendCopy`, :meth:`~pytdbot.Client.editTextMessage`; Default is `None` (Don\'t parse)
+    Supported values: `markdown`, `markdownv2`, `html`
+
+system_language_code (`str`, *optional*):
+    System language code. Default is `en`
+
+device_model (`str`, *optional*):
+    Device model. Default is `None` (auto-detect)
+
+files_directory (`str`, *optional*):
+    Directory for storing files and database
+
+database_encryption_key (`str` | `bytes`):
+    Encryption key for database encryption
+
+use_test_dc (`bool`, *optional*):
+    If set to true, the Telegram test environment will be used instead of the production environment. Default is `False`
+
+use_file_database (`bool`, *optional*):
+    If set to true, information about downloaded and uploaded files will be saved between application restarts. Default is `True`
+
+use_chat_info_database (`bool`, *optional*):
+    If set to true, the library will maintain a cache of users, basic groups, supergroups, channels and secret chats. Implies `use_file_database`. Default is `True`
+
+use_message_database (`bool`, *optional*):
+    If set to true, the library will maintain a cache of chats and messages. Implies use_chat_info_database. Default is `True`
+
+loop (:py:class:`asyncio.AbstractEventLoop`, *optional*):
+    Event loop. Default is `None` (auto-detect)
+
+options (`dict`, *optional*):
+    Pass key-value dictionary to set TDLib options. Check the list of available options at https://core.telegram.org/tdlib/options
+
+workers (`int`, *optional*):
+    Number of workers to handle updates. Default is `5`. If set to `None`, updates will be immediately handled instead of being queued, which can impact performance.
+
+no_updates (`bool`, *optional*):
+    Whether the client should handle updates or not. Applicable only when using [TDLib Server](https://github.com/pytdbot/tdlib-server). Default is `False`
+
+td_verbosity (`int`, *optional*):
+    Verbosity level of TDLib. Default is `2`
+
+td_log (:class:`~pytdbot.types.LogStream`, *optional*):
+    Log stream. Default is `None` (Log to `stdout`)
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="pytdbot.client.Client.authorization_state" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">authorization_state</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">authorization_state</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Current authorization state</p>
+
+    </div>
+
+</div>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.client.Client.start" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">start</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">start(login=True)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Start pytdbot client</p>
+<p>Parameters:
+    login (<code>bool</code>, <em>optional</em>):
+        Login after start. Default is <code>True</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.client.Client.login" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">login</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">login()</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Login to Telegram.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.client.Client.add_handler" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">add_handler</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">add_handler(
+    update_type,
+    func,
+    filters=None,
+    position=None,
+    inner_object=False,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Add an update handler</p>
+<p>Parameters:
+    update_type (<code>str</code>):
+        An update type</p>
+<pre><code>func (`Callable`):
+    A callable function
+
+filters (:class:`~pytdbot.filters.Filter`, *optional*):
+    message filter
+
+position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+
+inner_object (`bool`, *optional*):
+    Wether to pass an inner object of update or not; for example `UpdateNewMessage.message`. Default is `False`
+</code></pre>
+<p>Raises:
+    TypeError</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.client.Client.remove_handler" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">remove_handler</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">remove_handler(func)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Remove an update handler</p>
+<p>Parameters:
+    func (<code>Callable</code>):
+        A callable function</p>
+<p>Raises:
+    TypeError</p>
+<p>Returns:
+    :py:class:<code>bool</code>: True if handler was removed, False otherwise</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.client.Client.invoke" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">invoke</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">invoke(request)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Invoke a new TDLib request</p>
+<p>Example:
+    .. code-block:: python</p>
+<pre><code>    from pytdbot import Client
+
+    async with Client(...) as client:
+        res = await client.invoke({"@type": "getOption", "name": "version"})
+        if not isinstance(res, types.Error):
+            print(res)
+</code></pre>
+<p>Parameters:
+    request (<code>dict</code>):
+        The request to be sent</p>
+<p>Returns:
+    :class:<code>~pytdbot.types.Result</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.client.Client.call_method" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">call_method</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">call_method(method, **kwargs)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Call a method. with keyword arguments (<code>kwargs</code>) support</p>
+<p>Example:
+    .. code-block:: python</p>
+<pre><code>    from pytdbot import Client
+
+    async with Client(...) as client:
+        res = await client.call_method("getOption", name="version"})
+        if not isinstance(res, types.Error):
+            print(res)
+</code></pre>
+<p>Parameters:
+    method (<code>str</code>):
+        TDLib method name</p>
+<p>Returns:
+    Any :class:<code>~pytdbot.types.TlObject</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.client.Client.run" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">run</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">run(login=True)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Start the client and block until the client is stopped</p>
+<p>Example:
+    .. code-block:: python</p>
+<pre><code>    from pytdbot import Client
+
+    client = Client(...)
+
+    @client.on_updateNewMessage()
+    async def new_message(c,update):
+        await update.reply_text('Hello!')
+
+    client.run()
+</code></pre>
+<p>Parameters:
+    login (<code>bool</code>, <em>optional</em>):
+        Login after start. Default is <code>True</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.client.Client.idle" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">idle</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">idle()</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Idle and wait until the client is stopped.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.client.Client.stop" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">stop</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">stop()</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Stop the client</p>
+<p>Raises:
+    <code>RuntimeError</code>:
+        If the instance is already stopped</p>
+<p>Returns:
+    :py:class:<code>bool</code>: <code>True</code> on success</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.client.Client.set_td_parameters" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">set_td_parameters</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">set_td_parameters()</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Make a call to :meth:<code>~pytdbot.Client.setTdlibParameters</code> with the current client init parameters</p>
+<p>Raises:
+    <code>AuthorizationError</code></p>
+
+
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../exception/" class="btn btn-neutral float-right" title="Exception">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>© 2025 PyTDBot. All rights reserved.</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/pytdbot/client" class="fa fa-code-fork" style="color: #fcfcfc"> pytdbot/client</a>
+        </span>
+    
+    
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../exception/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

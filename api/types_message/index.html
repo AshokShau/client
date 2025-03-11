@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://pytdbot.github.io/client/api/types_message/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Message - PyTDBot Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Message";
+        var mkdocs_page_input_path = "api/types_message.md";
+        var mkdocs_page_url = "/client/api/types_message/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> PyTDBot Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../client/">Client</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exception/">Exception</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Handlers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers_decorators/">Decorators</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers_handler/">Handler</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers_td_updates/">Updates</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Methods</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../methods/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../methods_methods/">Methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../methods_td_functions/">Functions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Types</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../types_td_types/">TD Types</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../types_callback_query/">Callback Query</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Message</a>
+    <ul class="current">
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tdjson/">TDJson</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">PyTDBot Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">API Reference</li>
+          <li class="breadcrumb-item">Types</li>
+      <li class="breadcrumb-item active">Message</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/pytdbot/client/edit/master/docs/api/types_message.md">Edit on pytdbot/client</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div class="doc doc-object doc-module">
+
+
+
+<a id="pytdbot.types.td_types.bound_methods.message"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">MessageBoundMethods</span>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.from_id" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">from_id</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-cached"><code>cached</code></small>
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">from_id</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Message Sender ID</p>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.reply_to_message_id" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">reply_to_message_id</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-cached"><code>cached</code></small>
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">reply_to_message_id</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Replied message ID</p>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.text" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">text</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-cached"><code>cached</code></small>
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">text</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Text of the message</p>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.entities" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">entities</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-cached"><code>cached</code></small>
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">entities</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Entities of the message</p>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.caption" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">caption</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-cached"><code>cached</code></small>
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">caption</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Caption of the received media</p>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.caption_entities" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">caption_entities</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-cached"><code>cached</code></small>
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">caption_entities</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Caption entities of the received media</p>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.remote_file_id" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">remote_file_id</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-cached"><code>cached</code></small>
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">remote_file_id</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Remote file id</p>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.remote_unique_file_id" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">remote_unique_file_id</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-cached"><code>cached</code></small>
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">remote_unique_file_id</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Remote unique file id</p>
+
+    </div>
+
+</div>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.mention" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">mention</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">mention(parse_mode='html')</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Get the text_mention of the message sender</p>
+<p>Parameters:
+    parse_mode (<code>str</code>, <em>optional</em>):
+        The parse mode of the mention. Default is <code>html</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.getMessageProperties" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">getMessageProperties</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">getMessageProperties()</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Get the message properties</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.getRepliedMessage" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">getRepliedMessage</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">getRepliedMessage()</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Get the replied message</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.getChat" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">getChat</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">getChat()</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Get chat info</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.getChatMember" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">getChatMember</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">getChatMember()</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Get member info in the current chat</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.getUser" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">getUser</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">getUser()</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Get user info</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.setChatMemberStatus" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">setChatMemberStatus</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">setChatMemberStatus(status)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Set chat member status</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.leaveChat" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">leaveChat</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">leaveChat()</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Leave the current chat</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.ban" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">ban</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">ban(banned_until_date=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Ban the message sender</p>
+<p>Parameters:</p>
+<pre><code>banned_until_date (`int`):
+    Point in time (Unix timestamp) when the user will be unbanned; 0 if never. If the user is banned for more than 366 days or for less than 30 seconds from the current time, the user is considered to be banned forever. Always 0 in basic groups
+</code></pre>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.delete" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">delete</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">delete(revoke=True)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Delete the received message</p>
+<p>Parameters:
+    revoke (<code>bool</code>, <em>optional</em>):
+        Pass true to delete messages for all chat members. Always true for supergroups, channels and secret chats</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.react" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">react</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">react(emoji='👍', is_big=False)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>React to the current message</p>
+<p>Parameters:
+    emoji (<code>str</code>, <em>optional</em>):
+        Text representation of the reaction; pass <code>None</code> to remove the current reaction. Default is <code>👍</code></p>
+<pre><code>is_big (`bool`, *optional*):
+    Pass true if the reactions are added with a big animation. Default is `False`
+</code></pre>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.pin" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">pin</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">pin(disable_notification=False, only_for_self=False)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Pin the message</p>
+<p>Parameters:
+    disable_notification (<code>bool</code>, <em>optional</em>):
+        If True, disable notification for the message</p>
+<pre><code>only_for_self (`bool`, *optional*):
+    True, if the message needs to be pinned for one side only; private chats only
+</code></pre>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.unpin" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">unpin</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">unpin()</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Unpin the message</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.download" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">download</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">download(priority=1, offset=0, limit=0, synchronous=True)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Download the media file and returns <code>LocalFile</code> object. Shortcut for :meth:<code>~pytdbot.Client.downloadFile</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.action" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">action</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">action(action, message_thread_id=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Sends a chat action to a specific chat. Supporting context manager (<code>with</code> statement)</p>
+<p>\Example:</p>
+<pre><code>.. code-block:: python
+
+    async with update.action("record_video") as action:
+        ## Any blocking operation
+        await asyncio.sleep(10)
+        action.setAction("upload_video") # change the action to uploading a video
+</code></pre>
+<p>Or</p>
+<pre><code>.. code-block:: python
+
+    await update.action("typing")
+    ## Any blocking operation
+    await asyncio.sleep(2)
+    await update.reply_text("Hello?")
+</code></pre>
+<p>\Parameters:
+    action (<code>str</code>):
+        Type of action to broadcast. Choose one, depending on what the user is about to receive: <code>typing</code> for text messages, <code>upload_photo</code> for photos, <code>record_video</code> or <code>upload_video</code> for videos, <code>record_voice</code> or <code>upload_voice</code> for voice notes, <code>upload_document</code> for general files, <code>choose_sticker</code> for stickers, <code>`find_location</code> for location data, <code>record_video_note</code> or <code>upload_video_note</code> for video notes</p>
+<pre><code>message_thread_id (`int`, *optional*):
+    If not 0, a message thread identifier in which the action was performed. Default is `None`
+</code></pre>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.reply_text" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">reply_text</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">reply_text(
+    text,
+    entities=None,
+    parse_mode=None,
+    disable_web_page_preview=False,
+    url=None,
+    force_small_media=None,
+    force_large_media=None,
+    show_above_text=None,
+    clear_draft=False,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Reply to the message with text. Shortcut for :meth:<code>~pytdbot.Client.sendTextMessage</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.reply_animation" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">reply_animation</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">reply_animation(
+    animation,
+    thumbnail=None,
+    caption=None,
+    caption_entities=None,
+    parse_mode=None,
+    added_sticker_file_ids=None,
+    duration=0,
+    width=0,
+    height=0,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    has_spoiler=False,
+    message_thread_id=0,
+    quote=None,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Reply to the message with animation. Shortcut for :meth:<code>~pytdbot.Client.sendAnimation</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.reply_audio" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">reply_audio</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">reply_audio(
+    audio,
+    album_cover_thumbnail=None,
+    caption=None,
+    caption_entities=None,
+    parse_mode=None,
+    title=None,
+    performer=None,
+    duration=0,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Reply to the message with audio. Shortcut for :meth:<code>~pytdbot.Client.sendAudio</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.reply_document" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">reply_document</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">reply_document(
+    document,
+    thumbnail=None,
+    caption=None,
+    caption_entities=None,
+    parse_mode=None,
+    disable_content_type_detection=True,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Reply to the message with a document. Shortcut for :meth:<code>~pytdbot.Client.sendDocument</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.reply_photo" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">reply_photo</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">reply_photo(
+    photo,
+    thumbnail=None,
+    caption=None,
+    caption_entities=None,
+    parse_mode=None,
+    added_sticker_file_ids=None,
+    width=0,
+    height=0,
+    self_destruct_type=None,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    has_spoiler=False,
+    message_thread_id=0,
+    quote=None,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Reply to the message with a photo. Shortcut for :meth:<code>~pytdbot.Client.sendPhoto</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.reply_video" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">reply_video</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">reply_video(
+    video,
+    thumbnail=None,
+    caption=None,
+    caption_entities=None,
+    parse_mode=None,
+    added_sticker_file_ids=None,
+    supports_streaming=None,
+    duration=0,
+    width=0,
+    height=0,
+    self_destruct_type=None,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    has_spoiler=False,
+    message_thread_id=0,
+    quote=None,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Reply to the message with a video. Shortcut for :meth:<code>~pytdbot.Client.sendVideo</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.reply_video_note" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">reply_video_note</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">reply_video_note(
+    video_note,
+    thumbnail=None,
+    duration=0,
+    length=0,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Reply to the message with a video note. Shortcut for :meth:<code>~pytdbot.Client.sendVideoNote</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.reply_voice" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">reply_voice</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">reply_voice(
+    voice,
+    caption=None,
+    caption_entities=None,
+    parse_mode=None,
+    duration=0,
+    waveform=None,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Reply to the message with a voice note. Shortcut for :meth:<code>~pytdbot.Client.sendVoice</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.reply_sticker" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">reply_sticker</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">reply_sticker(
+    sticker,
+    emoji=None,
+    thumbnail=None,
+    width=0,
+    height=0,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Reply to the message with a sticker. Shortcut for :meth:<code>~pytdbot.Client.sendSticker</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.copy" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">copy</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">copy(
+    chat_id,
+    in_game_share=None,
+    replace_caption=None,
+    new_caption=None,
+    new_caption_entities=None,
+    parse_mode=None,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_to_message_id=0,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Copy message to chat. Shortcut for :meth:<code>~pytdbot.Client.sendCopy</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.forward" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">forward</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">forward(
+    chat_id, in_game_share=False, disable_notification=False
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Forward message to chat. Shortcut for :meth:<code>~pytdbot.Client.forwardMessage</code>.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.types.td_types.bound_methods.message.MessageBoundMethods.edit_text" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">edit_text</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">edit_text(
+    text,
+    parse_mode=None,
+    entities=None,
+    disable_web_page_preview=False,
+    url=None,
+    force_small_media=None,
+    force_large_media=None,
+    show_above_text=None,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Edit text message. Shortcut for :meth:<code>~pytdbot.Client.editTextMessage</code>.</p>
+
+
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../types_callback_query/" class="btn btn-neutral float-left" title="Callback Query"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../tdjson/" class="btn btn-neutral float-right" title="TDJson">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>© 2025 PyTDBot. All rights reserved.</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/pytdbot/client" class="fa fa-code-fork" style="color: #fcfcfc"> pytdbot/client</a>
+        </span>
+    
+    
+      <span><a href="../types_callback_query/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../tdjson/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

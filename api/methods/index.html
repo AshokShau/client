@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://pytdbot.github.io/client/api/methods/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Overview - PyTDBot Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Overview";
+        var mkdocs_page_input_path = "api/methods.md";
+        var mkdocs_page_url = "/client/api/methods/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> PyTDBot Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../client/">Client</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exception/">Exception</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Handlers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers_decorators/">Decorators</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers_handler/">Handler</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers_td_updates/">Updates</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Methods</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../methods_methods/">Methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../methods_td_functions/">Functions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Types</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../types_td_types/">TD Types</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../types_callback_query/">Callback Query</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../types_message/">Message</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tdjson/">TDJson</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">PyTDBot Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">API Reference</li>
+          <li class="breadcrumb-item">Methods</li>
+      <li class="breadcrumb-item active">Overview</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/pytdbot/client/edit/master/docs/api/methods.md">Edit on pytdbot/client</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div class="doc doc-object doc-module">
+
+
+
+<a id="pytdbot.methods"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pytdbot.methods.Methods" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">Methods</span>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="TDLibFunctions (pytdbot.methods.td_functions.TDLibFunctions)" href="../methods_td_functions/#pytdbot.methods.td_functions.TDLibFunctions">TDLibFunctions</a></code></p>
+
+
+        <p>TDLib API functions class</p>
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.parseText" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">parseText</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">parseText(text, parse_mode='html')</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Parses Bold, Italic, Underline, Strikethrough, Spoiler, Code, Pre, PreCode, TextUrl and MentionName entities contained in the text</p>
+<p>Parameters:
+    text (<code>str</code>):
+        The text to parse</p>
+<pre><code>parse_mode (`str`):
+    Text parse mode. Currently supported: markdown, markdownv2 and html. Default is "html"
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.FormattedText</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.getSupergroupId" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">getSupergroupId</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">getSupergroupId(chat_id)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Get supergroup id from chat id</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Chat identifier</p>
+<p>Returns:
+    <code>int</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.sendTextMessage" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">sendTextMessage</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">sendTextMessage(
+    chat_id,
+    text,
+    entities=None,
+    parse_mode=None,
+    disable_web_page_preview=False,
+    url=None,
+    force_small_media=None,
+    force_large_media=None,
+    show_above_text=None,
+    clear_draft=False,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_to=None,
+    reply_to_message_id=0,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Send text message to chat</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Target chat</p>
+<pre><code>text (`str`):
+    Text to send
+
+entities (`list`, *optional*):
+    List of `TextEntity` objects to parse in the text. If you want to send a text with formatting, use ``parse_mode`` instead
+
+parse_mode (`str`, *optional*):
+    Mode for parsing entities. Default is `markdown`
+
+disable_web_page_preview (`bool`, *optional*):
+    Disables link previews for links in this message. Default is `False`
+
+url (`str`, *optional*):
+    URL to use for link preview. If empty, then the first URL found in the message text will be used. Default is `None`
+
+force_small_media (`bool`, *optional*):
+    True, if shown media preview must be small; ignored in secret chats or if the URL isn't explicitly specified. Default is `None`
+
+force_large_media (`bool`, *optional*):
+    True, if shown media preview must be large; ignored in secret chats or if the URL isn't explicitly specified. Default is `None`
+
+show_above_text (`bool`, *optional*):
+    True, if link preview must be shown above message text; otherwise, the link preview will be shown below the message text; ignored in secret chats. Default is `None`
+
+disable_notification (`bool`, *optional*):
+    If True, disable notification for the message. Default is `None`
+
+clear_draft (`bool`, *optional*):
+    True, if a chat message draft must be deleted. Default is `False`
+
+protect_content (`bool`, *optional*):
+    If True, the content of the message must be protected from forwarding and saving
+
+allow_paid_broadcast (`bool`, *optional*):
+    Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only. Default is `False`
+
+message_thread_id (`int`, *optional*):
+    If not 0, a message thread identifier in which the message will be sent
+
+quote (:class:`~pytdbot.types.InputTextQuote`, *optional*):
+    Chosen quote from the replied message; may be null if none
+
+reply_to (:class:`~pytdbot.types.InputMessageReplyTo`, *optional*):
+    Information about the message or the story this message is replying to; may be null if none
+
+reply_to_message_id (`int`, *optional*):
+    Identifier of the message to reply. Ignored if `reply_to` is specified
+
+reply_markup (:class:`~pytdbot.types.ReplyMarkupInlineKeyboard` | :class:`~pytdbot.types.ReplyMarkupShowKeyboard` | :class:`~pytdbot.types.ReplyMarkupForceReply` | :class:`~pytdbot.types.ReplyMarkupRemoveKeyboard`, *optional*):
+    The message reply markup
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.Message</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.sendAnimation" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">sendAnimation</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">sendAnimation(
+    chat_id,
+    animation,
+    thumbnail=None,
+    caption=None,
+    caption_entities=None,
+    parse_mode=None,
+    added_sticker_file_ids=None,
+    duration=0,
+    width=0,
+    height=0,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    has_spoiler=False,
+    message_thread_id=0,
+    quote=None,
+    reply_to=None,
+    reply_to_message_id=0,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Send animation to chat</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Target chat</p>
+<pre><code>animation (:class:`~pytdbot.types.InputFileRemote` | :class:`~pytdbot.types.InputFileLocal` | `str`):
+    Animation to send
+
+thumbnail (:class:`~pytdbot.types.InputThumbnail`, *optional*):
+    Thumbnail of the animation to send
+
+caption (`str`, *optional*):
+    Animation caption
+
+caption_entities (`list`, *optional*):
+    List of `MessageEntity` objects to parse in the caption. If you want to send a caption with formatting, use `parse_mode` instead
+
+parse_mode (`str`, *optional*):
+    Mode for parsing entities. Default is `markdown`
+
+added_sticker_file_ids (`list`, *optional*):
+    File identifiers of the stickers added to the animation, if applicable
+
+duration (`int`, *optional*):
+    Duration of the animation, in seconds
+
+width (`int`, *optional*):
+    Width of the animation
+
+height (`int`, *optional*):
+    Height of the animation
+
+disable_notification (`bool`, *optional*):
+    If True, disable notification for the message. Default is `False`
+
+protect_content (`bool`, *optional*):
+    If True, the content of the message must be protected from forwarding and saving
+
+allow_paid_broadcast (`bool`, *optional*):
+    Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only. Default is `False`
+
+has_spoiler (`bool`, *optional*):
+    True, if the photo preview must be covered by a spoiler animation; not supported in secret chats
+
+message_thread_id (`int`, *optional*):
+    If not 0, a message thread identifier in which the message will be sent
+
+quote (:class:`~pytdbot.types.InputTextQuote`, *optional*):
+    Chosen quote from the replied message; may be null if none
+
+reply_to (:class:`~pytdbot.types.InputMessageReplyTo`, *optional*):
+    Information about the message or the story this message is replying to; may be null if none
+
+reply_to_message_id (`int`, *optional*):
+    Identifier of the message to reply. Ignored if `reply_to` is specified
+
+reply_markup (:class:`~pytdbot.types.ReplyMarkupInlineKeyboard` | :class:`~pytdbot.types.ReplyMarkupShowKeyboard` | :class:`~pytdbot.types.ReplyMarkupForceReply` | :class:`~pytdbot.types.ReplyMarkupRemoveKeyboard`, *optional*):
+    The message reply markup
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.Message</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.sendAudio" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">sendAudio</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">sendAudio(
+    chat_id,
+    audio,
+    album_cover_thumbnail=None,
+    caption=None,
+    caption_entities=None,
+    parse_mode=None,
+    title=None,
+    performer=None,
+    duration=0,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_to=None,
+    reply_to_message_id=0,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Send audio to chat</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Target chat</p>
+<pre><code>audio (:class:`~pytdbot.types.InputFileRemote` | :class:`~pytdbot.types.InputFileLocal` | `str`):
+    Audio to send
+
+album_cover_thumbnail (:class:`~pytdbot.types.InputThumbnail`, *optional*):
+    Thumbnail of the album cover to be set
+
+caption (`str`, *optional*):
+    Audio caption
+
+caption_entities (`list`, *optional*):
+    List of `MessageEntity` objects to parse in the caption. If you want to send a caption with formatting, use `parse_mode` instead
+
+parse_mode (`str`, *optional*):
+    Mode for parsing entities. Default is `markdown`
+
+title (`str`, *optional*):
+    Title of the audio
+
+performer (`str`, *optional*):
+    Performer of the audio
+
+duration (`int`, *optional*):
+    Duration of the audio, in seconds
+
+disable_notification (`bool`, *optional*):
+    If True, disable notification for the message. Default is `False`
+
+protect_content (`bool`, *optional*):
+    If True, the content of the message must be protected from forwarding and saving
+
+allow_paid_broadcast (`bool`, *optional*):
+    Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only. Default is `False`
+
+message_thread_id (`int`, *optional*):
+    If not 0, a message thread identifier in which the message will be sent
+
+quote (:class:`~pytdbot.types.InputTextQuote`, *optional*):
+    Chosen quote from the replied message; may be null if none
+
+reply_to (:class:`~pytdbot.types.InputMessageReplyTo`, *optional*):
+    Information about the message or the story this message is replying to; may be null if none
+
+reply_to_message_id (`int`, *optional*):
+    Identifier of the message to reply. Ignored if `reply_to` is specified
+
+reply_markup (:class:`~pytdbot.types.ReplyMarkupInlineKeyboard` | :class:`~pytdbot.types.ReplyMarkupShowKeyboard` | :class:`~pytdbot.types.ReplyMarkupForceReply` | :class:`~pytdbot.types.ReplyMarkupRemoveKeyboard`, *optional*):
+    The message reply markup
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.Message</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.sendDocument" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">sendDocument</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">sendDocument(
+    chat_id,
+    document,
+    thumbnail=None,
+    caption=None,
+    caption_entities=None,
+    parse_mode=None,
+    disable_content_type_detection=True,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_to=None,
+    reply_to_message_id=0,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Send document to chat</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Target chat</p>
+<pre><code>document (:class:`~pytdbot.types.InputFileRemote` | :class:`~pytdbot.types.InputFileLocal` | `str`):
+    Document to send
+
+thumbnail (:class:`~pytdbot.types.InputThumbnail`, *optional*):
+    Thumbnail of the document to be set
+
+caption (`str`, *optional*):
+    Document caption
+
+caption_entities (`list`, *optional*):
+    List of `MessageEntity` objects to parse in the caption. If you want to send a caption with formatting, use `parse_mode` instead
+
+parse_mode (`str`, *optional*):
+    Mode for parsing entities. Default is `markdown`
+
+disable_content_type_detection (`bool`, *optional*):
+    If true, automatic file type detection will be disabled and the document will be always sent as file. Always true for files sent to secret chats
+
+disable_notification (`bool`, *optional*):
+    If True, disable notification for the message. Default is `False`
+
+protect_content (`bool`, *optional*):
+    If True, the content of the message must be protected from forwarding and saving
+
+allow_paid_broadcast (`bool`, *optional*):
+    Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only. Default is `False`
+
+message_thread_id (`int`, *optional*):
+    If not 0, a message thread identifier in which the message will be sent
+
+quote (:class:`~pytdbot.types.InputTextQuote`, *optional*):
+    Chosen quote from the replied message; may be null if none
+
+reply_to (:class:`~pytdbot.types.InputMessageReplyTo`, *optional*):
+    Information about the message or the story this message is replying to; may be null if none
+
+reply_to_message_id (`int`, *optional*):
+    Identifier of the message to reply. Ignored if `reply_to` is specified
+
+reply_markup (:class:`~pytdbot.types.ReplyMarkupInlineKeyboard` | :class:`~pytdbot.types.ReplyMarkupShowKeyboard` | :class:`~pytdbot.types.ReplyMarkupForceReply` | :class:`~pytdbot.types.ReplyMarkupRemoveKeyboard`, *optional*):
+    The message reply markup
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.Message</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.sendPhoto" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">sendPhoto</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">sendPhoto(
+    chat_id,
+    photo,
+    thumbnail=None,
+    caption=None,
+    caption_entities=None,
+    parse_mode=None,
+    added_sticker_file_ids=None,
+    width=0,
+    height=0,
+    self_destruct_type=None,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    has_spoiler=False,
+    message_thread_id=0,
+    quote=None,
+    reply_to=None,
+    reply_to_message_id=0,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Send photo to chat</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Target chat</p>
+<pre><code>photo (:class:`~pytdbot.types.InputFileRemote` | :class:`~pytdbot.types.InputFileLocal` | `str`):
+    Photo to send
+
+thumbnail (:class:`~pytdbot.types.InputThumbnail`, *optional*):
+    Thumbnail of the photo to be set
+
+caption (`str`, *optional*):
+    Photo caption
+
+caption_entities (`list`, *optional*):
+    List of `MessageEntity` objects to parse in the caption. If you want to send a caption with formatting, use `parse_mode` instead
+
+parse_mode (`str`, *optional*):
+    Mode for parsing entities. Default is `markdown`
+
+added_sticker_file_ids (`list`, *optional*):
+    List of file identifiers of added stickers
+
+width (`int`, *optional*):
+    Photo width
+
+height (`int`, *optional*):
+    Photo height
+
+self_destruct_type (:class:`~pytdbot.types.MessageSelfDestructType`, *optional*):
+    Photo self-destruct type; pass null if none; private chats only
+
+disable_notification (`bool`, *optional*):
+    If True, disable notification for the message. Default is `False`
+
+protect_content (`bool`, *optional*):
+    If True, the content of the message must be protected from forwarding and saving
+
+allow_paid_broadcast (`bool`, *optional*):
+    Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only. Default is `False`
+
+has_spoiler (`bool`, *optional*):
+    True, if the photo preview must be covered by a spoiler animation; not supported in secret chats
+
+message_thread_id (`int`, *optional*):
+    If not 0, a message thread identifier in which the message will be sent
+
+quote (:class:`~pytdbot.types.InputTextQuote`, *optional*):
+    Chosen quote from the replied message; may be null if none
+
+reply_to (:class:`~pytdbot.types.InputMessageReplyTo`, *optional*):
+    Information about the message or the story this message is replying to; may be null if none
+
+reply_to_message_id (`int`, *optional*):
+    Identifier of the message to reply. Ignored if `reply_to` is specified
+
+reply_markup (:class:`~pytdbot.types.ReplyMarkupInlineKeyboard` | :class:`~pytdbot.types.ReplyMarkupShowKeyboard` | :class:`~pytdbot.types.ReplyMarkupForceReply` | :class:`~pytdbot.types.ReplyMarkupRemoveKeyboard`, *optional*):
+    The message reply markup
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.Message</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.sendVideo" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">sendVideo</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">sendVideo(
+    chat_id,
+    video,
+    thumbnail=None,
+    caption=None,
+    caption_entities=None,
+    parse_mode=None,
+    added_sticker_file_ids=None,
+    supports_streaming=None,
+    duration=0,
+    width=0,
+    height=0,
+    self_destruct_type=None,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    has_spoiler=False,
+    message_thread_id=0,
+    quote=None,
+    reply_to=None,
+    reply_to_message_id=0,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Send video to chat</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Target chat</p>
+<pre><code>video (:class:`~pytdbot.types.InputFileRemote` | :class:`~pytdbot.types.InputFileLocal` | `str`):
+    Video to send
+
+thumbnail (:class:`~pytdbot.types.InputThumbnail`, *optional*):
+    Thumbnail of the video to be set
+
+caption (`str`, *optional*):
+    Video caption
+
+caption_entities (`list`, *optional*):
+    List of `MessageEntity` objects to parse in the caption. If you want to send a caption with formatting, use `parse_mode` instead
+
+parse_mode (`str`, *optional*):
+    Mode for parsing entities. Default is `markdown`
+
+added_sticker_file_ids (`list`, *optional*):
+    List of file identifiers of added stickers
+
+supports_streaming (`bool`, *optional*):
+    True, if the video should be tried to be streamed
+
+duration (`int`, *optional*):
+    Duration of sent video in seconds
+
+width (`int`, *optional*):
+    Video width
+
+height (`int`, *optional*):
+    Video height
+
+self_destruct_type (:class:`~pytdbot.types.MessageSelfDestructType`, *optional*):
+    Video self-destruct type; pass null if none; private chats only
+
+disable_notification (`bool`, *optional*):
+    If True, disable notification for the message. Default is `False`
+
+protect_content (`bool`, *optional*):
+    If True, the content of the message must be protected from forwarding and saving
+
+allow_paid_broadcast (`bool`, *optional*):
+    Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only. Default is `False`
+
+has_spoiler (`bool`, *optional*):
+    True, if the photo preview must be covered by a spoiler animation; not supported in secret chats
+
+message_thread_id (`int`, *optional*):
+    If not 0, a message thread identifier in which the message will be sent
+
+quote (:class:`~pytdbot.types.InputTextQuote`, *optional*):
+    Chosen quote from the replied message; may be null if none
+
+reply_to (:class:`~pytdbot.types.InputMessageReplyTo`, *optional*):
+    Information about the message or the story this message is replying to; may be null if none
+
+reply_to_message_id (`int`, *optional*):
+    Identifier of the message to reply. Ignored if `reply_to` is specified
+
+reply_markup (:class:`~pytdbot.types.ReplyMarkupInlineKeyboard` | :class:`~pytdbot.types.ReplyMarkupShowKeyboard` | :class:`~pytdbot.types.ReplyMarkupForceReply` | :class:`~pytdbot.types.ReplyMarkupRemoveKeyboard`, *optional*):
+    The message reply markup
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.Message</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.sendVideoNote" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">sendVideoNote</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">sendVideoNote(
+    chat_id,
+    video_note,
+    thumbnail=None,
+    duration=0,
+    length=0,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_to=None,
+    reply_to_message_id=0,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Send video note to chat</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Target chat</p>
+<pre><code>video_note (:class:`~pytdbot.types.InputFileRemote` | :class:`~pytdbot.types.InputFileLocal` | `str`):
+    Video note to send
+
+thumbnail (:class:`~pytdbot.types.InputThumbnail`, *optional*):
+    Thumbnail of the video note to be set
+
+duration (`int`, *optional*):
+    Duration of sent video note in seconds
+
+length (`int`, *optional*):
+    Video width and height
+
+disable_notification (`bool`, *optional*):
+    If True, disable notification for the message. Default is `False`
+
+protect_content (`bool`, *optional*):
+    If True, the content of the message must be protected from forwarding and saving
+
+allow_paid_broadcast (`bool`, *optional*):
+    Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only. Default is `False`
+
+message_thread_id (`int`, *optional*):
+    If not 0, a message thread identifier in which the message will be sent
+
+quote (:class:`~pytdbot.types.InputTextQuote`, *optional*):
+    Chosen quote from the replied message; may be null if none
+
+reply_to (:class:`~pytdbot.types.InputMessageReplyTo`, *optional*):
+    Information about the message or the story this message is replying to; may be null if none
+
+reply_to_message_id (`int`, *optional*):
+    Identifier of the message to reply. Ignored if `reply_to` is specified
+
+reply_markup (:class:`~pytdbot.types.ReplyMarkupInlineKeyboard` | :class:`~pytdbot.types.ReplyMarkupShowKeyboard` | :class:`~pytdbot.types.ReplyMarkupForceReply` | :class:`~pytdbot.types.ReplyMarkupRemoveKeyboard`, *optional*):
+    The message reply markup
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.Message</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.sendVoice" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">sendVoice</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">sendVoice(
+    chat_id,
+    voice,
+    caption=None,
+    caption_entities=None,
+    parse_mode=None,
+    duration=0,
+    waveform=None,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_to=None,
+    reply_to_message_id=0,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Send voice to chat</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Target chat</p>
+<pre><code>voice (:class:`~pytdbot.types.InputFileRemote` | :class:`~pytdbot.types.InputFileLocal` | `str`):
+    Voice to send
+
+caption (`str`, *optional*):
+    Voice caption
+
+caption_entities (`list`, *optional*):
+    List of `MessageEntity` objects to parse in the caption. If you want to send a caption without parsing entities, use `parse_mode` instead
+
+parse_mode (`str`, *optional*):
+    Parse mode for the caption. Default is None
+
+duration (`int`, *optional*):
+    Duration of sent voice in seconds
+
+waveform (`bytes`, *optional*):
+    Waveform representation of the voice note, in 5-bit format
+
+disable_notification (`bool`, *optional*):
+    If True, disable notification for the message. Default is `False`
+
+protect_content (`bool`, *optional*):
+    If True, the content of the message must be protected from forwarding and saving
+
+allow_paid_broadcast (`bool`, *optional*):
+    Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only. Default is `False`
+
+message_thread_id (`int`, *optional*):
+    If not 0, a message thread identifier in which the message will be sent
+
+quote (:class:`~pytdbot.types.InputTextQuote`, *optional*):
+    Chosen quote from the replied message; may be null if none
+
+reply_to (:class:`~pytdbot.types.InputMessageReplyTo`, *optional*):
+    Information about the message or the story this message is replying to; may be null if none
+
+reply_to_message_id (`int`, *optional*):
+    Identifier of the message to reply. Ignored if `reply_to` is specified
+
+reply_markup (:class:`~pytdbot.types.ReplyMarkupInlineKeyboard` | :class:`~pytdbot.types.ReplyMarkupShowKeyboard` | :class:`~pytdbot.types.ReplyMarkupForceReply` | :class:`~pytdbot.types.ReplyMarkupRemoveKeyboard`, *optional*):
+    The message reply markup
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.Message</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.sendSticker" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">sendSticker</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">sendSticker(
+    chat_id,
+    sticker,
+    emoji=None,
+    thumbnail=None,
+    width=0,
+    height=0,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_to=None,
+    reply_to_message_id=0,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Send sticker to chat</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Target chat</p>
+<pre><code>sticker (:class:`~pytdbot.types.InputFileRemote` | :class:`~pytdbot.types.InputFileLocal` | `str`):
+    Sticker to send
+
+emoji (`str`, *optional*):
+    Emoji associated with the sticker
+
+thumbnail (:class:`~pytdbot.types.InputThumbnail`, *optional*):
+    Sticker thumbnail
+
+width (`int`, *optional*):
+    Sticker width
+
+height (`int`, *optional*):
+    Sticker height
+
+disable_notification (`bool`, *optional*):
+    If True, disable notification for the message. Default is `False`
+
+protect_content (`bool`, *optional*):
+    If True, the content of the message must be protected from forwarding and saving
+
+allow_paid_broadcast (`bool`, *optional*):
+    Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only. Default is `False`
+
+message_thread_id (`int`, *optional*):
+    If not 0, a message thread identifier in which the message will be sent
+
+quote (:class:`~pytdbot.types.InputTextQuote`, *optional*):
+    Chosen quote from the replied message; may be null if none
+
+reply_to (:class:`~pytdbot.types.InputMessageReplyTo`, *optional*):
+    Information about the message or the story this message is replying to; may be null if none
+
+reply_to_message_id (`int`, *optional*):
+    Identifier of the message to reply. Ignored if `reply_to` is specified
+
+reply_markup (:class:`~pytdbot.types.ReplyMarkupInlineKeyboard` | :class:`~pytdbot.types.ReplyMarkupShowKeyboard` | :class:`~pytdbot.types.ReplyMarkupForceReply` | :class:`~pytdbot.types.ReplyMarkupRemoveKeyboard`, *optional*):
+    The message reply markup
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.Message</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.sendCopy" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">sendCopy</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">sendCopy(
+    chat_id,
+    from_chat_id,
+    message_id,
+    in_game_share=None,
+    replace_caption=None,
+    new_caption=None,
+    new_caption_entities=None,
+    parse_mode=None,
+    disable_notification=False,
+    protect_content=False,
+    allow_paid_broadcast=False,
+    message_thread_id=0,
+    quote=None,
+    reply_to=None,
+    reply_to_message_id=0,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Copy message to chat</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Target chat</p>
+<pre><code>from_chat_id (`int`):
+    Identifier for the chat this forwarded message came from
+
+message_id (`int`):
+    Identifier of the message to forward
+
+in_game_share (`bool`, *optional*):
+    True, if a game message is being shared from a launched game; applies only to game messages
+
+replace_caption (`bool`, *optional*):
+    True, if media caption of the message copy needs to be replaced
+
+new_caption (`str`, *optional*):
+    New caption of the message copy
+
+new_caption_entities (`list`, *optional*):
+    List of `MessageEntity` objects representing entities in the new caption
+
+parse_mode (`str`, *optional*):
+    Mode for parsing entities in the new caption
+
+disable_notification (`bool`, *optional*):
+    If True, disable notification for the message. Default is `False`
+
+protect_content (`bool`, *optional*):
+    If True, the content of the message must be protected from forwarding and saving
+
+allow_paid_broadcast (`bool`, *optional*):
+    Pass true to allow the message to ignore regular broadcast limits for a small fee; for bots only. Default is `False`
+
+message_thread_id (`int`, *optional*):
+    If not 0, a message thread identifier in which the message will be sent
+
+quote (:class:`~pytdbot.types.InputTextQuote`, *optional*):
+    Chosen quote from the replied message; may be null if none
+
+reply_to (:class:`~pytdbot.types.InputMessageReplyTo`, *optional*):
+    Information about the message or the story this message is replying to; may be null if none
+
+reply_to_message_id (`int`, *optional*):
+    Identifier of the message to reply. Ignored if `reply_to` is specified
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.Message</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.forwardMessage" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">forwardMessage</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">forwardMessage(
+    chat_id,
+    from_chat_id,
+    message_id,
+    in_game_share=False,
+    disable_notification=False,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Forward message to chat</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Target chat</p>
+<pre><code>from_chat_id (`int`):
+    Identifier for the chat this forwarded message came from
+
+message_id (`int`):
+    Identifier of the message to forward
+
+in_game_share (`bool`, *optional*):
+    True, if a game message is being shared from a launched game; applies only to game messages
+
+disable_notification (`bool`, *optional*):
+    If True, disable notification for the message. Default is `False`
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.Message</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.methods.Methods.editTextMessage" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">editTextMessage</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">editTextMessage(
+    chat_id,
+    message_id,
+    text,
+    parse_mode=None,
+    entities=None,
+    disable_web_page_preview=False,
+    url=None,
+    force_small_media=None,
+    force_large_media=None,
+    show_above_text=None,
+    reply_markup=None,
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Edit text message</p>
+<p>Parameters:
+    chat_id (<code>int</code>):
+        Chat identifier</p>
+<pre><code>message_id (`int`):
+    Message identifier in the chat specified in chat_id
+
+text (`str`):
+    New text of the message
+
+parse_mode (`str`, *optional*):
+    Mode for parsing entities in the message text
+
+entities (`list`, *optional*):
+    List of `MessageEntity` objects representing entities that may appear in the message text
+
+disable_web_page_preview (`bool`, *optional*):
+    Disables link previews for links in this message. Default is `False`
+
+url (`str`, *optional*):
+    URL to use for link preview. If empty, then the first URL found in the message text will be used. Default is `None`
+
+force_small_media (`bool`, *optional*):
+    True, if shown media preview must be small; ignored in secret chats or if the URL isn't explicitly specified. Default is `None`
+
+force_large_media (`bool`, *optional*):
+    True, if shown media preview must be large; ignored in secret chats or if the URL isn't explicitly specified. Default is `None`
+
+show_above_text (`bool`, *optional*):
+    True, if link preview must be shown above message text; otherwise, the link preview will be shown below the message text; ignored in secret chats. Default is `None`
+
+reply_markup (:class:`~pytdbot.types.ReplyMarkupInlineKeyboard` | :class:`~pytdbot.types.ReplyMarkupShowKeyboard` | :class:`~pytdbot.types.ReplyMarkupForceReply` | :class:`~pytdbot.types.ReplyMarkupRemoveKeyboard`, *optional*):
+    The message reply markup
+</code></pre>
+<p>Returns:
+    :class:<code>~pytdbot.types.Message</code></p>
+
+
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../handlers_td_updates/" class="btn btn-neutral float-left" title="Updates"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../methods_methods/" class="btn btn-neutral float-right" title="Methods">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>© 2025 PyTDBot. All rights reserved.</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/pytdbot/client" class="fa fa-code-fork" style="color: #fcfcfc"> pytdbot/client</a>
+        </span>
+    
+    
+      <span><a href="../handlers_td_updates/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../methods_methods/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

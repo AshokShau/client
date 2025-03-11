@@ -1,0 +1,4471 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://pytdbot.github.io/client/api/handlers_td_updates/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Updates - PyTDBot Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Updates";
+        var mkdocs_page_input_path = "api/handlers_td_updates.md";
+        var mkdocs_page_url = "/client/api/handlers_td_updates/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> PyTDBot Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../client/">Client</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exception/">Exception</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Handlers</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../handlers/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers_decorators/">Decorators</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../handlers_handler/">Handler</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Updates</a>
+    <ul class="current">
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Methods</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../methods/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../methods_methods/">Methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../methods_td_functions/">Functions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Types</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../types_td_types/">TD Types</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../types_callback_query/">Callback Query</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../types_message/">Message</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tdjson/">TDJson</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">PyTDBot Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">API Reference</li>
+          <li class="breadcrumb-item">Handlers</li>
+      <li class="breadcrumb-item active">Updates</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/pytdbot/client/edit/master/docs/api/handlers_td_updates.md">Edit on pytdbot/client</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div class="doc doc-object doc-module">
+
+
+
+<a id="pytdbot.handlers.td_updates"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pytdbot.handlers.td_updates.Updates" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">Updates</span>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+
+        <p>Auto generated TDLib updates</p>
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateAuthorizationState" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateAuthorizationState</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateAuthorizationState(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The user authorization state has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewMessage" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewMessage</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewMessage(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A new message was received; can also be an outgoing message</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageSendAcknowledged" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageSendAcknowledged</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageSendAcknowledged(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A request to send a message has reached the Telegram server. This doesn't mean that the message will be sent successfully. This update is sent only if the option \"use_quick_ack\" is set to true. This update may be sent multiple times for the same message</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageSendSucceeded" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageSendSucceeded</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageSendSucceeded(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A message has been successfully sent</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageSendFailed" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageSendFailed</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageSendFailed(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A message failed to send. Be aware that some messages being sent can be irrecoverably deleted, in which case updateDeleteMessages will be received instead of this update</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageContent" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageContent</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageContent(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The message content has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageEdited" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageEdited</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageEdited(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A message was edited. Changes in the message content will come in a separate updateMessageContent</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageIsPinned" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageIsPinned</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageIsPinned(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The message pinned state was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageInteractionInfo" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageInteractionInfo</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageInteractionInfo(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The information about interactions with a message has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageContentOpened" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageContentOpened</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageContentOpened(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The message content was opened. Updates voice note messages to \"listened\", video note messages to \"viewed\" and starts the self-destruct timer</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageMentionRead" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageMentionRead</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageMentionRead(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A message with an unread mention was read</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageUnreadReactions" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageUnreadReactions</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageUnreadReactions(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of unread reactions added to a message was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageFactCheck" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageFactCheck</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageFactCheck(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A fact-check added to a message was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageLiveLocationViewed" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageLiveLocationViewed</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageLiveLocationViewed(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A message with a live location was viewed. When the update is received, the application is expected to update the live location</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateVideoPublished" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateVideoPublished</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateVideoPublished(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>An automatically scheduled message with video has been successfully sent after conversion</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewChat" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewChat</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewChat(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A new chat has been loaded/created. This update is guaranteed to come before the chat identifier is returned to the application. The chat field changes will be reported through separate updates</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatTitle" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatTitle</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatTitle(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The title of a chat was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatPhoto" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatPhoto</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatPhoto(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A chat photo was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatAccentColors" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatAccentColors</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatAccentColors(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Chat accent colors have changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatPermissions" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatPermissions</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatPermissions(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Chat permissions were changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatLastMessage" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatLastMessage</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatLastMessage(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The last message of a chat was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatPosition" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatPosition</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatPosition(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The position of a chat in a chat list has changed. An updateChatLastMessage or updateChatDraftMessage update might be sent instead of the update</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatAddedToList" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatAddedToList</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatAddedToList(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A chat was added to a chat list</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatRemovedFromList" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatRemovedFromList</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatRemovedFromList(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A chat was removed from a chat list</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatReadInbox" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatReadInbox</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatReadInbox(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Incoming messages were read or the number of unread messages has been changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatReadOutbox" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatReadOutbox</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatReadOutbox(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Outgoing messages were read</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatActionBar" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatActionBar</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatActionBar(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The chat action bar was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatBusinessBotManageBar" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatBusinessBotManageBar</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatBusinessBotManageBar(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The bar for managing business bot was changed in a chat</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatAvailableReactions" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatAvailableReactions</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatAvailableReactions(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The chat available reactions were changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatDraftMessage" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatDraftMessage</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatDraftMessage(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A chat draft has changed. Be aware that the update may come in the currently opened chat but with old content of the draft. If the user has changed the content of the draft, this update mustn't be applied</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatEmojiStatus" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatEmojiStatus</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatEmojiStatus(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Chat emoji status has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatMessageSender" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatMessageSender</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatMessageSender(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The message sender that is selected to send messages in a chat has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatMessageAutoDeleteTime" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatMessageAutoDeleteTime</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatMessageAutoDeleteTime(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The message auto-delete or self-destruct timer setting for a chat was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatNotificationSettings" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatNotificationSettings</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatNotificationSettings(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Notification settings for a chat were changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatPendingJoinRequests" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatPendingJoinRequests</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatPendingJoinRequests(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The chat pending join requests were changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatReplyMarkup" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatReplyMarkup</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatReplyMarkup(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The default chat reply markup was changed. Can occur because new messages with reply markup were received or because an old reply markup was hidden by the user</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatBackground" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatBackground</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatBackground(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The chat background was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatTheme" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatTheme</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatTheme(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The chat theme was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatUnreadMentionCount" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatUnreadMentionCount</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatUnreadMentionCount(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The chat unread_mention_count has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatUnreadReactionCount" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatUnreadReactionCount</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatUnreadReactionCount(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The chat unread_reaction_count has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatVideoChat" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatVideoChat</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatVideoChat(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A chat video chat state has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatDefaultDisableNotification" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatDefaultDisableNotification</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatDefaultDisableNotification(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The value of the default disable_notification parameter, used when a message is sent to the chat, was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatHasProtectedContent" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatHasProtectedContent</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatHasProtectedContent(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A chat content was allowed or restricted for saving</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatIsTranslatable" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatIsTranslatable</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatIsTranslatable(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Translation of chat messages was enabled or disabled</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatIsMarkedAsUnread" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatIsMarkedAsUnread</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatIsMarkedAsUnread(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A chat was marked as unread or was read</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatViewAsTopics" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatViewAsTopics</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatViewAsTopics(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A chat default appearance has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatBlockList" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatBlockList</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatBlockList(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A chat was blocked or unblocked</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatHasScheduledMessages" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatHasScheduledMessages</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatHasScheduledMessages(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A chat's has_scheduled_messages field has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatFolders" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatFolders</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatFolders(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of chat folders or a chat folder has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatOnlineMemberCount" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatOnlineMemberCount</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatOnlineMemberCount(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The number of online group members has changed. This update with non-zero number of online group members is sent only for currently opened chats. There is no guarantee that it is sent just after the number of online users has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateSavedMessagesTopic" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateSavedMessagesTopic</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateSavedMessagesTopic(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Basic information about a Saved Messages topic has changed. This update is guaranteed to come before the topic identifier is returned to the application</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateSavedMessagesTopicCount" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateSavedMessagesTopicCount</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateSavedMessagesTopicCount(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Number of Saved Messages topics has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateQuickReplyShortcut" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateQuickReplyShortcut</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateQuickReplyShortcut(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Basic information about a quick reply shortcut has changed. This update is guaranteed to come before the quick shortcut name is returned to the application</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateQuickReplyShortcutDeleted" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateQuickReplyShortcutDeleted</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateQuickReplyShortcutDeleted(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A quick reply shortcut and all its messages were deleted</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateQuickReplyShortcuts" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateQuickReplyShortcuts</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateQuickReplyShortcuts(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of quick reply shortcuts has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateQuickReplyShortcutMessages" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateQuickReplyShortcutMessages</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateQuickReplyShortcutMessages(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of quick reply shortcut messages has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateForumTopicInfo" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateForumTopicInfo</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateForumTopicInfo(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Basic information about a topic in a forum chat was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateScopeNotificationSettings" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateScopeNotificationSettings</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateScopeNotificationSettings(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Notification settings for some type of chats were updated</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateReactionNotificationSettings" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateReactionNotificationSettings</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateReactionNotificationSettings(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Notification settings for reactions were updated</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNotification" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNotification</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNotification(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A notification was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNotificationGroup" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNotificationGroup</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNotificationGroup(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A list of active notifications in a notification group has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateActiveNotifications" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateActiveNotifications</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateActiveNotifications(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Contains active notifications that were shown on previous application launches. This update is sent only if the message database is used. In that case it comes once before any updateNotification and updateNotificationGroup update</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateHavePendingNotifications" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateHavePendingNotifications</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateHavePendingNotifications(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Describes whether there are some pending notification updates. Can be used to prevent application from killing, while there are some pending notifications</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateDeleteMessages" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateDeleteMessages</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateDeleteMessages(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Some messages were deleted</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatAction" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatAction</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatAction(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A message sender activity in the chat has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateUserStatus" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateUserStatus</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateUserStatus(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The user went online or offline</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateUser" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateUser</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateUser(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Some data of a user has changed. This update is guaranteed to come before the user identifier is returned to the application</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateBasicGroup" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateBasicGroup</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateBasicGroup(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Some data of a basic group has changed. This update is guaranteed to come before the basic group identifier is returned to the application</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateSupergroup" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateSupergroup</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateSupergroup(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Some data of a supergroup or a channel has changed. This update is guaranteed to come before the supergroup identifier is returned to the application</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateSecretChat" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateSecretChat</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateSecretChat(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Some data of a secret chat has changed. This update is guaranteed to come before the secret chat identifier is returned to the application</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateUserFullInfo" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateUserFullInfo</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateUserFullInfo(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Some data in userFullInfo has been changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateBasicGroupFullInfo" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateBasicGroupFullInfo</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateBasicGroupFullInfo(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Some data in basicGroupFullInfo has been changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateSupergroupFullInfo" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateSupergroupFullInfo</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateSupergroupFullInfo(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Some data in supergroupFullInfo has been changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateServiceNotification" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateServiceNotification</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateServiceNotification(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A service notification from the server was received. Upon receiving this the application must show a popup with the content of the notification</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateFile" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateFile</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateFile(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Information about a file was updated</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateFileGenerationStart" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateFileGenerationStart</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateFileGenerationStart(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The file generation process needs to be started by the application. Use setFileGenerationProgress and finishFileGeneration to generate the file</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateFileGenerationStop" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateFileGenerationStop</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateFileGenerationStop(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>File generation is no longer needed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateFileDownloads" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateFileDownloads</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateFileDownloads(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The state of the file download list has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateFileAddedToDownloads" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateFileAddedToDownloads</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateFileAddedToDownloads(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A file was added to the file download list. This update is sent only after file download list is loaded for the first time</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateFileDownload" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateFileDownload</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateFileDownload(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A file download was changed. This update is sent only after file download list is loaded for the first time</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateFileRemovedFromDownloads" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateFileRemovedFromDownloads</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateFileRemovedFromDownloads(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A file was removed from the file download list. This update is sent only after file download list is loaded for the first time</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateApplicationVerificationRequired" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateApplicationVerificationRequired</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateApplicationVerificationRequired(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A request can't be completed unless application verification is performed; for official mobile applications only. The method setApplicationVerificationToken must be called once the verification is completed or failed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateApplicationRecaptchaVerificationRequired" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateApplicationRecaptchaVerificationRequired</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateApplicationRecaptchaVerificationRequired(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A request can't be completed unless reCAPTCHA verification is performed; for official mobile applications only. The method setApplicationVerificationToken must be called once the verification is completed or failed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateCall" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateCall</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateCall(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>New call was created or information about a call was updated</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateGroupCall" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateGroupCall</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateGroupCall(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Information about a group call was updated</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateGroupCallParticipant" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateGroupCallParticipant</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateGroupCallParticipant(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Information about a group call participant was changed. The updates are sent only after the group call is received through getGroupCall and only if the call is joined or being joined</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewCallSignalingData" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewCallSignalingData</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewCallSignalingData(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>New call signaling data arrived</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateUserPrivacySettingRules" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateUserPrivacySettingRules</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateUserPrivacySettingRules(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Some privacy setting rules have been changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateUnreadMessageCount" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateUnreadMessageCount</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateUnreadMessageCount(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Number of unread messages in a chat list has changed. This update is sent only if the message database is used</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateUnreadChatCount" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateUnreadChatCount</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateUnreadChatCount(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Number of unread chats, i.e. with unread messages or marked as unread, has changed. This update is sent only if the message database is used</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateStory" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateStory</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateStory(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A story was changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateStoryDeleted" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateStoryDeleted</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateStoryDeleted(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A story became inaccessible</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateStorySendSucceeded" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateStorySendSucceeded</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateStorySendSucceeded(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A story has been successfully sent</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateStorySendFailed" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateStorySendFailed</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateStorySendFailed(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A story failed to send. If the story sending is canceled, then updateStoryDeleted will be received instead of this update</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatActiveStories" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatActiveStories</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatActiveStories(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of active stories posted by a specific chat has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateStoryListChatCount" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateStoryListChatCount</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateStoryListChatCount(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Number of chats in a story list has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateStoryStealthMode" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateStoryStealthMode</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateStoryStealthMode(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Story stealth mode settings have changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateOption" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateOption</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateOption(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>An option changed its value</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateStickerSet" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateStickerSet</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateStickerSet(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A sticker set has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateInstalledStickerSets" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateInstalledStickerSets</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateInstalledStickerSets(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of installed sticker sets was updated</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateTrendingStickerSets" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateTrendingStickerSets</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateTrendingStickerSets(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of trending sticker sets was updated or some of them were viewed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateRecentStickers" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateRecentStickers</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateRecentStickers(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of recently used stickers was updated</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateFavoriteStickers" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateFavoriteStickers</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateFavoriteStickers(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of favorite stickers was updated</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateSavedAnimations" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateSavedAnimations</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateSavedAnimations(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of saved animations was updated</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateSavedNotificationSounds" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateSavedNotificationSounds</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateSavedNotificationSounds(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of saved notification sounds was updated. This update may not be sent until information about a notification sound was requested for the first time</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateDefaultBackground" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateDefaultBackground</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateDefaultBackground(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The default background has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatThemes" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatThemes</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatThemes(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of available chat themes has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateAccentColors" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateAccentColors</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateAccentColors(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of supported accent colors has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateProfileAccentColors" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateProfileAccentColors</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateProfileAccentColors(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of supported accent colors for user profiles has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateLanguagePackStrings" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateLanguagePackStrings</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateLanguagePackStrings(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Some language pack strings have been updated</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateConnectionState" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateConnectionState</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateConnectionState(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The connection state has changed. This update must be used only to show a human-readable description of the connection state</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateTermsOfService" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateTermsOfService</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateTermsOfService(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>New terms of service must be accepted by the user. If the terms of service are declined, then the deleteAccount method must be called with the reason \"Decline ToS update\"</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateUnconfirmedSession" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateUnconfirmedSession</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateUnconfirmedSession(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The first unconfirmed session has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateAttachmentMenuBots" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateAttachmentMenuBots</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateAttachmentMenuBots(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of bots added to attachment or side menu has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateWebAppMessageSent" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateWebAppMessageSent</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateWebAppMessageSent(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A message was sent by an opened Web App, so the Web App needs to be closed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateActiveEmojiReactions" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateActiveEmojiReactions</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateActiveEmojiReactions(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of active emoji reactions has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateAvailableMessageEffects" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateAvailableMessageEffects</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateAvailableMessageEffects(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of available message effects has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateDefaultReactionType" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateDefaultReactionType</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateDefaultReactionType(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The type of default reaction has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateDefaultPaidReactionType" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateDefaultPaidReactionType</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateDefaultPaidReactionType(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The type of default paid reaction has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateSavedMessagesTags" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateSavedMessagesTags</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateSavedMessagesTags(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Tags used in Saved Messages or a Saved Messages topic have changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateActiveLiveLocationMessages" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateActiveLiveLocationMessages</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateActiveLiveLocationMessages(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of messages with active live location that need to be updated by the application has changed. The list is persistent across application restarts only if the message database is used</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateOwnedStarCount" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateOwnedStarCount</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateOwnedStarCount(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The number of Telegram Stars owned by the current user has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatRevenueAmount" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatRevenueAmount</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatRevenueAmount(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The revenue earned from sponsored messages in a chat has changed. If chat revenue screen is opened, then getChatRevenueTransactions may be called to fetch new transactions</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateStarRevenueStatus" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateStarRevenueStatus</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateStarRevenueStatus(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The Telegram Star revenue earned by a bot or a chat has changed. If Telegram Star transaction screen of the chat is opened, then getStarTransactions may be called to fetch new transactions</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateSpeechRecognitionTrial" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateSpeechRecognitionTrial</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateSpeechRecognitionTrial(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The parameters of speech recognition without Telegram Premium subscription has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateDiceEmojis" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateDiceEmojis</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateDiceEmojis(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of supported dice emojis has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateAnimatedEmojiMessageClicked" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateAnimatedEmojiMessageClicked</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateAnimatedEmojiMessageClicked(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Some animated emoji message was clicked and a big animated sticker must be played if the message is visible on the screen. chatActionWatchingAnimations with the text of the message needs to be sent if the sticker is played</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateAnimationSearchParameters" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateAnimationSearchParameters</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateAnimationSearchParameters(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The parameters of animation search through getOption(\"animation_search_bot_username\") bot has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateSuggestedActions" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateSuggestedActions</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateSuggestedActions(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of suggested to the user actions has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateSpeedLimitNotification" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateSpeedLimitNotification</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateSpeedLimitNotification(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Download or upload file speed for the user was limited, but it can be restored by subscription to Telegram Premium. The notification can be postponed until a being downloaded or uploaded file is visible to the user. Use getOption(\"premium_download_speedup\") or getOption(\"premium_upload_speedup\") to get expected speedup after subscription to Telegram Premium</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateContactCloseBirthdays" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateContactCloseBirthdays</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateContactCloseBirthdays(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The list of contacts that had birthdays recently or will have birthday soon has changed</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateAutosaveSettings" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateAutosaveSettings</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateAutosaveSettings(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Autosave settings for some type of chats were updated</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateBusinessConnection" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateBusinessConnection</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateBusinessConnection(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A business connection has changed; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewBusinessMessage" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewBusinessMessage</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewBusinessMessage(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A new message was added to a business account; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateBusinessMessageEdited" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateBusinessMessageEdited</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateBusinessMessageEdited(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A message in a business account was edited; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateBusinessMessagesDeleted" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateBusinessMessagesDeleted</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateBusinessMessagesDeleted(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Messages in a business account were deleted; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewInlineQuery" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewInlineQuery</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewInlineQuery(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A new incoming inline query; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewChosenInlineResult" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewChosenInlineResult</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewChosenInlineResult(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>The user has chosen a result of an inline query; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewCallbackQuery" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewCallbackQuery</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewCallbackQuery(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A new incoming callback query; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewInlineCallbackQuery" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewInlineCallbackQuery</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewInlineCallbackQuery(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A new incoming callback query from a message sent via a bot; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewBusinessCallbackQuery" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewBusinessCallbackQuery</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewBusinessCallbackQuery(
+    filters=None, position=None
+)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A new incoming callback query from a business message; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewShippingQuery" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewShippingQuery</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewShippingQuery(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A new incoming shipping query; for bots only. Only for invoices with flexible price</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewPreCheckoutQuery" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewPreCheckoutQuery</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewPreCheckoutQuery(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A new incoming pre-checkout query; for bots only. Contains full information about a checkout</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewCustomEvent" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewCustomEvent</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewCustomEvent(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A new incoming event; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewCustomQuery" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewCustomQuery</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewCustomQuery(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A new incoming query; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updatePoll" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updatePoll</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updatePoll(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A poll was updated; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updatePollAnswer" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updatePollAnswer</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updatePollAnswer(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A user changed the answer to a poll; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatMember" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatMember</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatMember(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>User rights changed in a chat; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateNewChatJoinRequest" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateNewChatJoinRequest</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateNewChatJoinRequest(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A user sent a join request to a chat; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateChatBoost" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateChatBoost</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateChatBoost(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>A chat boost has changed; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageReaction" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageReaction</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageReaction(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>User changed its reactions on a message with public reactions; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updateMessageReactions" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updateMessageReactions</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updateMessageReactions(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Reactions added to a message with anonymous reactions have changed; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updatePaidMediaPurchased" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updatePaidMediaPurchased</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updatePaidMediaPurchased(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Paid media were purchased by a user; for bots only</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pytdbot.handlers.td_updates.Updates.on_updates" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">on_updates</span>
+
+
+</h3>
+<pre class="highlight"><code class="language-python doc-signature">on_updates(filters=None, position=None)</code></pre>
+
+    <div class="doc doc-contents ">
+
+        <p>Contains a list of updates</p>
+<p>Parameters:
+    filters (:class:<code>pytdbot.filters.Filter</code>, <em>optional</em>):
+        An update filter</p>
+<pre><code>position (`int`, *optional*):
+    The function position in handlers list. Default is `None` (append)
+</code></pre>
+<p>Raises:
+    :py:class:<code>TypeError</code></p>
+
+
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../handlers_handler/" class="btn btn-neutral float-left" title="Handler"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../methods/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>© 2025 PyTDBot. All rights reserved.</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/pytdbot/client" class="fa fa-code-fork" style="color: #fcfcfc"> pytdbot/client</a>
+        </span>
+    
+    
+      <span><a href="../handlers_handler/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../methods/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
