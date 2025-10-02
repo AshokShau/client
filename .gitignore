@@ -16,4 +16,8 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 *.log
-docs/
+.idea
+/docs/_build
+/docs/api
+docs/build_docs.sh
+
