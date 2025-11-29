@@ -1,6 +1,10 @@
-# Pytdbot [![Version](https://img.shields.io/pypi/v/Pytdbot?style=flat&logo=pypi)](https://pypi.org/project/Pytdbot) [![TDLib version](https://img.shields.io/badge/TDLib-v1.8.56-blue?logo=telegram)](https://github.com/tdlib/td) [![Downloads](https://static.pepy.tech/personalized-badge/pytdbot?period=month&units=none&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/pytdbot) [![Telegram Chat](https://img.shields.io/badge/Pytdbot%20chat-blue?logo=telegram&label=Telegram)](https://t.me/pytdbotchat)
+# Pytdbot [![Version](https://img.shields.io/pypi/v/Pytdbot?style=flat&logo=pypi)](https://pypi.org/project/Pytdbot) [![TDLib version](https://img.shields.io/badge/TDLib-v1.8.57-blue?logo=telegram)](https://github.com/tdlib/td) [![Downloads](https://static.pepy.tech/personalized-badge/pytdbot?period=month&units=none&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/pytdbot) [![Telegram Chat](https://img.shields.io/badge/Pytdbot%20chat-blue?logo=telegram&label=Telegram)](https://t.me/pytdbotchat)
 
-Pytdbot (Python TDLib) is an asynchronous [**TDLib**](https://github.com/tdlib/td) wrapper for **Telegram** users/bots written in **Python**.
+<a href="https://cupofton.pages.dev/donate?a=UQCeySURtYxvqF2jNXlsFrXuTEqPjJhGx8uoev6tUbD_HELL&n=AYMEN&t=5&c=You+deserve+a+Cup+of+TON+for+Pytdbot%2521" target="_blank" rel="noopener">
+    <img src="https://cupofton.pages.dev/assets/badge-1.svg" alt="Buy me a Cup of TON" style="width: 600px; height: auto;">
+</a>
+
+Pytdbot is an asynchronous [**TDLib**](https://github.com/tdlib/td) wrapper for **Telegram** users/bots written in **Python**.
 
 ### Features
 
@@ -54,9 +58,14 @@ Basic example:
 ```python
 
 import asyncio
+import logging
 
 from pytdbot import Client, types
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="[%(levelname)s][p %(process)d %(threadName)s][%(created)f][%(filename)s:%(lineno)d][%(funcName)s][%(name)s]  %(message)s",
+)
 client = Client(
     token="1088394097:AAQX2DnWiw4ihwiJUhIHOGog8gGOI",  # Your bot token
     api_id=0,
